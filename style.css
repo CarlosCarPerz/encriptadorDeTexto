@@ -14,6 +14,8 @@ body {
 
 header {
     padding: 24px 16px;
+    width: 100%;
+    height: 96px;
 }
 
 main .ingresarTexto {
@@ -45,7 +47,7 @@ main .ingresarTexto div {
     flex-direction: column;
 }
 
-main .ingresarTexto div .boton {
+main .ingresarTexto .boton-container .boton {
     height: 60px;
     margin:  12px 0;
     border-radius: 20px;
@@ -68,6 +70,10 @@ main .mensaje {
     box-shadow: 0 14px 32px -8px;
 }
 
+main .mensaje img {
+    display: none;        
+}
+
 main .mensaje h2 {
     padding: 32px;
     font-size: 2.4rem;
@@ -78,18 +84,27 @@ main .mensaje p {
     font-size: 1.8rem;
 }
 
+@media (min-width: 520px) {
+    main .ingresarTexto .boton-container {
+        width: 500px;
+        align-self: center;
+    }
+}
+
 @media (min-width: 765px) {
     main .ingresarTexto {
         padding: 20px 40px;
     }
 
-    main .ingresarTexto div {
+    main .ingresarTexto .boton-container {
+        width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
-    main .ingresarTexto div .boton {
-        width: 330px;
+    main .ingresarTexto .boton-container .boton {
+        width: 332px;
+        margin: 24px;
     }
 
     main .mensaje {
@@ -97,25 +112,40 @@ main .mensaje p {
     }
 }
 
-@media (min-width: 1440px) {
-    header img {
-        padding: 40px 80px;
+@media (min-width: 1024px) {
+    header {
+        padding: 40px 60px;
     }
 
     main {
         display: flex;
-        padding: 40px 40px 40px 240px;
+        justify-content: space-around;
+        width: 100%;
+        height: 80%;
     }
 
     main .ingresarTexto {
-        height: 100%;
+        padding-left: 80px;
+        padding-right: 0;
+        width: 680px;
+        height: 610px;
+    }
+
+    main .ingresarTexto .ingreso {
+        margin-bottom: 320px;
     }
 
     main .mensaje {
-        height: 944px;
-        position: absolute;
-        right: 0;
-        top: 40px;
-        margin-bottom: 40px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 280px;
+    }
+
+    main .mensaje img {
+        margin: 12px;
+        display: block;   
+        width: 60%;     
     }
 }
