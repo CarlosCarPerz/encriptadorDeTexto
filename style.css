@@ -85,6 +85,10 @@ main .mensaje {
     box-shadow: 0 14px 32px -8px;
 }
 
+main .mensaje textarea {
+    display: none; 
+}
+
 main .mensaje img {
     display: none;        
 }
