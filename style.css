@@ -55,11 +55,26 @@ main .ingresarTexto .boton-container .boton {
     border: none;
     font-weight: bold;
     font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-main .ingresarTexto #desencriptar {
+main .ingresarTexto .boton-container .boton:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+main .ingresarTexto #encriptarBtn:hover {
+    background-color: #3db2f1;
+}
+
+main .ingresarTexto #desencriptarBtn {
     background-color: #86E5FF;
-    border: 3px solid #FFC93C;
+    border: 3px solid rgb(252, 197, 59);
+}
+
+main .ingresarTexto #desencriptarBtn:hover {
+    background-color: rgba(252, 197, 59, 0.2);
 }
 
 main .mensaje {
