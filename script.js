@@ -1,5 +1,9 @@
 const textIngreso = document.querySelector(".ingreso");
 const mesage = document.querySelector("#textFinal");
+const mono = document.querySelector("#muneco");
+const sub = document.querySelector("h2");
+const textMensaje = document.querySelector("#textMensaje");
+const container = document.querySelector(".mensaje");
 
 
 /* const btnEncriptar = document.querySelector("#encriptarBtn"); */
@@ -16,9 +20,13 @@ La letra "u" es convertida para "ufat" */
  */
 function encriptarBtn () {
     const textoEncriptado = encriptar(textIngreso.value);
-    mesage.style.display = inline-block;
     mesage.value = textoEncriptado;
-    textIngreso.value = ""
+    mesage.style = "display: inline-block";
+    container.style = "justify-content: start";
+    mono.style = "display: none";
+    sub.style = "display: none";
+    textMensaje.style = "display: none";
+    textIngreso.value = "";
 }
 
 function encriptar (stringEncriptado) {

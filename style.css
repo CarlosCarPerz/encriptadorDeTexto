@@ -86,7 +86,11 @@ main .mensaje {
 }
 
 main .mensaje textarea {
-    display: none; 
+    width: 90%;
+    display: none;
+    border: none;
+    font-size: 2rem;
+    margin-top: 8px;
 }
 
 main .mensaje img {
