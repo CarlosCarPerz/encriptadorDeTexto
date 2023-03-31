@@ -30,12 +30,15 @@ main .ingresarTexto p {
 }
 
 main .ingresarTexto .ingreso {
-    height: 48px;
-    margin-bottom: 285px;
+    height: 400px;
     border: none;
     font-size: 3.2rem;
     background-color: #86E5FF;
     color: #0081C9;
+}
+
+main .ingresarTexto .ingreso:focus {
+    border: none;
 }
 
 main .ingresarTexto .ingreso::placeholder {
@@ -87,6 +90,7 @@ main .mensaje {
 
 main .mensaje textarea {
     width: 90%;
+    height: 70%;
     display: none;
     border: none;
     font-size: 2rem;
@@ -107,11 +111,36 @@ main .mensaje p {
     font-size: 1.8rem;
 }
 
+main .mensaje .boton-container .boton:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+main .mensaje .boton {
+    display: none;
+    height: 60px;
+    width: 250px;
+    margin:  12px 0;
+    border-radius: 20px;
+    background-color: #5BC0F8;
+    border: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .mensaje #copiarBtn:hover {
+    background-color: #3db2f1;
+    scale: 1.05;
+}
+
 @media (min-width: 520px) {
     main .ingresarTexto .boton-container {
         width: 500px;
         align-self: center;
     }
+    
 }
 
 @media (min-width: 765px) {
@@ -152,10 +181,6 @@ main .mensaje p {
         padding-right: 0;
         width: 680px;
         height: 610px;
-    }
-
-    main .ingresarTexto .ingreso {
-        margin-bottom: 320px;
     }
 
     main .mensaje {

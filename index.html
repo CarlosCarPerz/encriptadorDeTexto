@@ -13,13 +13,14 @@
     </header>
     <main>
         <section class="ingresarTexto">
-            <input type="text" class="ingreso" placeholder="Ingrese el texto aqui">
+            <textarea name="ingresar-texto" class="ingreso" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            <!-- <textarea type="text" class="ingreso" placeholder="Ingrese el texto aqui"></textarea> -->
             <p>
                 ⚠ Solo letras minúsculas y sin acentos
             </p>
             <div class="boton-container">
                 <input class="boton" id="encriptarBtn" type="button" value="Encriptar" onclick="encriptarBtn()">
-                <input class="boton" id="desencriptarBtn" type="button" value="Desencriptar">
+                <input class="boton" id="desencriptarBtn" type="button" value="Desencriptar" onclick="desencriptarBtn()">
             </div>
         </section>
         <section class="mensaje">
@@ -27,6 +28,7 @@
             <img src="./pics/Muñeco.png" alt="" id="muneco">
             <h2>Ningún mensaje fue encontrado</h2>
             <p id="textMensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <input class="boton" id="copiarBtn" type="button" value="Copiar" onclick="copiarBtn()">
         </section>
     </main>
     <script src="./script.js"></script>
