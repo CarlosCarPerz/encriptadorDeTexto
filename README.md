@@ -38,7 +38,7 @@ This GitHub repository is a challenge of Oracle Next Education(ONE). The purpose
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To see the page, just double click on the index file, it is not necessary to do anything else. If you cannot access it, click on the following link:
+To see the page, just double click on the index file, it is not necessary to do anything else. If you cannot access it, click on the following link: https://carloscarperz.github.io/encriptadorDeTexto/
 
 <!-- LICENSE -->
 ## License
