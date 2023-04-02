@@ -47,7 +47,7 @@ function desencriptarBtn () {
     const textoDesencriptado = desencriptar(textIngreso.value);
     mesage.value = textoDesencriptado;
     mesage.style = "display: inline-block";
-    container.style = "justify-content: start";
+    container.style = "justify-content: space-between";
     mono.style = "display: none";
     sub.style = "display: none";
     textMensaje.style = "display: none";
